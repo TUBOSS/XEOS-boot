@@ -1,0 +1,6 @@
+[submodule "bios"]
+	path = bios
+	url = https://github.com/macmade/XEOS-boot-bios.git
+[submodule "uefi"]
+	path = uefi
+	url = https://github.com/macmade/XEOS-boot-uefi.git
