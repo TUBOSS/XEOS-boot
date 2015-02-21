@@ -62,18 +62,17 @@
 include make/Config.mk
 include make/Targets.mk
 
+.NOTPARALLEL:
+
 PROMPT  := XEOS SOURCE BOOT
 DEPS    := 
 FILES   := 
+TARGETS := bios uefi
 
-all:
+all: build-sub
 	
-	$(call PRINT,$(COLOR_CYAN)Building the XEOS BIOS bootloader$(COLOR_NONE))
-	@cd bios && $(MAKE)
-	$(call PRINT,$(COLOR_CYAN)Building the XEOS UEFI bootloader$(COLOR_NONE))
-	@cd uefi && $(MAKE)
+	@:
+
+clean: clean-sub
 	
-clean:
-	
-	@cd bios && $(MAKE) clean
-	@cd uefi && $(MAKE) clean
+	@:
