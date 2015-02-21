@@ -4,3 +4,6 @@
 [submodule "uefi"]
 	path = uefi
 	url = https://github.com/macmade/XEOS-boot-uefi.git
+[submodule "make"]
+	path = make
+	url = https://github.com/macmade/XEOS-makefile.git
